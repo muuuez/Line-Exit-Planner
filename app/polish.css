@@ -62,6 +62,14 @@
 .recommendation-label { display: block; color: var(--accent); font-size: 10px; font-weight: 700; letter-spacing: 1.3px; margin-bottom: 7px; }
 .results-heading, .panel-heading { min-width: 0; }
 .results-heading > div, .panel-heading > div { min-width: 0; }
+/* Stay beside the form; the grid boundary releases this at the submit button. */
+@media (min-width: 641px) {
+  .planner-aside {
+    position: sticky;
+    top: 24px;
+    align-self: start;
+  }
+}
 @media (min-width: 641px) and (max-width: 1020px) {
   .hero { grid-template-columns: 1fr; gap: 40px; }
   .hero-copy { max-width: 610px; }

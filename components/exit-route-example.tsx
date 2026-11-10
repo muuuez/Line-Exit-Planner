@@ -16,8 +16,6 @@ export function ExitRouteExample() {
         <path className="exit-map-branch branch-wait" d="M12 180H25Q38 180 38 166V74Q38 60 52 60H80" />
         <path className="exit-map-branch branch-exit" d="M12 180H80" />
         <path className="exit-map-branch branch-abandon" d="M12 180H25Q38 180 38 194V286Q38 300 52 300H80" />
-        <circle cx="12" cy="180" r="7" fill="#f8f9f5" stroke="#27674f" strokeWidth="3" vectorEffect="non-scaling-stroke" />
-        <circle cx="12" cy="180" r="2.5" fill="#27674f" />
       </svg>
       <div className="exit-map-options">{example.paths.map((p, i) => {
         const best = p.id === example.cheapestPath;

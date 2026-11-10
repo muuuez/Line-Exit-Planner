@@ -1,4 +1,4 @@
-﻿# Line Exit Planner
+﻿# Offramp
 
 A scenario calculator that helps Malaysian mobile customers understand the possible cost of moving from postpaid to prepaid.
 
@@ -8,7 +8,7 @@ It compares three choices over the same period: **wait out the contract**, **off
 
 Getting a new number does not automatically tell you what happened to the old account. Someone might stop using a postpaid line while bills and late charges continue under their name.
 
-Line Exit Planner makes that trade-off easier to understand. It turns entered figures into a side-by-side comparison and gives users questions to confirm with their provider before deciding what to do.
+Offramp makes that trade-off easier to understand. It turns entered figures into a side-by-side comparison and gives users questions to confirm with their provider before deciding what to do.
 
 ## What the app does
 

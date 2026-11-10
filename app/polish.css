@@ -1,0 +1,110 @@
+/* Readability and spacing refinements shared by landing and planner. */
+.brand {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: -0.9px;
+  line-height: 1.1;
+}
+.brand-logo { width: 38px; height: 38px; flex-shrink: 0; }
+@media (max-width: 640px) {
+  .brand { font-size: 23px; }
+  .brand-logo { width: 32px; height: 32px; }
+}
+.eyebrow, .mini-label, .how .eyebrow, .preview-top .eyebrow,
+.results-bottom .eyebrow { font-size: 11px; letter-spacing: 1.3px; }
+.sample-tag, .best-tag { font-size: 11px !important; }
+.preview-top { flex-wrap: wrap; }
+.preview-row small { font-size: 12px; line-height: 1.5; }
+.preview-row > div { min-width: 0; }
+.preview-caption { font-size: 12px; line-height: 1.7; margin-top: 13px; }
+.preview-bottom, .privacy-note, footer { font-size: 12px; }
+.hero-preview { padding-top: 28px; padding-bottom: 23px; }
+.how-step p, .insight-strip > p { font-size: 14px; }
+.form-title { margin-bottom: 28px; }
+.form-title p, .field small, .helper, .checkbox-label small,
+.planner-aside .small-note { font-size: 13px; line-height: 1.7; }
+.field > label, legend, .checkbox-label { font-size: 14px; }
+.field { margin-bottom: 24px; }
+.field small:empty { display: none; }
+.field-grid { column-gap: 24px; }
+.form-card fieldset { margin: 8px 0 25px; padding-top: 20px; border-top: 1px solid #edf0e9; }
+.form-card legend { padding: 0 10px 0 0; margin-bottom: 12px; }
+.radio-group { gap: 9px; }
+.radio-group label { min-height: 44px; padding: 9px 12px; border: 1px solid var(--line); border-radius: 7px; font-size: 13px; line-height: 1.4; }
+.radio-group label:has(input:checked) { background: var(--tint); border-color: #8ca58a; }
+.radio-group label:focus-within { outline: 2px solid var(--accent); outline-offset: 2px; }
+.section-title { margin-top: 34px; padding-top: 32px; }
+.disclaimer { font-size: 13px; line-height: 1.7; }
+.button { min-height: 46px; font-size: 14px; }
+.text-button { min-height: 44px; font-size: 13px; }
+.input-wrap, select { min-height: 48px; }
+.input-wrap input { font-size: 16px; }
+.result-card > small, .result-card ul, .recommendation p,
+.scenario-panel small, .crossover-note, .data-details,
+.chart-legend { font-size: 13px; }
+.result-card > p, .question-list label, .assumptions-panel ul { font-size: 14px; }
+.result-card { min-width: 0; }
+.result-card-top { flex-wrap: wrap; gap: 8px; }
+.result-total { font-size: clamp(25px, 2.7vw, 34px); }
+.scenario-panel { margin-top: 20px; padding: 20px; background: white; border: 1px solid var(--line); border-radius: 9px; }
+.scenario-panel label { font-size: 14px; }
+.scenario-panel select { flex: 1 1 280px; min-width: 0; font-size: 14px; }
+.scenario-panel small { flex-basis: 100%; }
+.uncertainty-notice { margin-top: 16px; padding: 22px; border: 1px solid #dbcda8; border-left: 3px solid #ad762f; border-radius: 9px; background: #faf7ee; color: #554b35; }
+.uncertainty-title { display: flex; align-items: center; gap: 9px; font-size: 15px; }
+.uncertainty-title svg { flex-shrink: 0; }
+.uncertainty-notice > p { margin-top: 9px; font-size: 14px; line-height: 1.7; }
+.active-scenario { display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px; margin-top: 14px; font-size: 13px; }
+.active-scenario > span { color: #6c6048; }
+.uncertainty-notice ul { margin: 13px 0 0; padding-left: 19px; font-size: 13px; line-height: 1.8; }
+.uncertainty-notice li + li { margin-top: 6px; }
+.recommendation-label { display: block; color: var(--accent); font-size: 10px; font-weight: 700; letter-spacing: 1.3px; margin-bottom: 7px; }
+.results-heading, .panel-heading { min-width: 0; }
+.results-heading > div, .panel-heading > div { min-width: 0; }
+@media (min-width: 641px) and (max-width: 1020px) {
+  .hero { grid-template-columns: 1fr; gap: 40px; }
+  .hero-copy { max-width: 610px; }
+  .hero-preview { max-width: 610px; width: 100%; transform: none; }
+  .preview-row { flex-wrap: nowrap; }
+  .preview-price { font-size: 21px; }
+  .planner-layout { grid-template-columns: minmax(0, 1fr) 220px; }
+}
+@media (max-width: 640px) {
+  .hero { padding-left: 20px; padding-right: 20px; }
+  .hero h1 { font-size: clamp(40px, 11vw, 52px); }
+  .hero-actions .button { font-size: 13px; }
+  .hero-preview { padding: 22px 15px; }
+  .preview-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 12px; padding: 18px 12px; }
+  .preview-symbol { display: none; }
+  .preview-row strong { font-size: 14px; }
+  .preview-row small { font-size: 12px; }
+  .preview-price { font-size: clamp(17px, 4.9vw, 21px); text-align: right; }
+  .preview-price .best-tag { float: none; display: flex !important; width: fit-content; margin-left: auto; margin-top: 7px; }
+  .preview-bottom { align-items: flex-start; font-size: 12px; }
+  .preview-bottom .status-dot { flex-shrink: 0; margin-top: 6px; }
+  .planner-page { padding-left: 16px; padding-right: 16px; }
+  .form-card { padding: 24px 18px; }
+  .planner-heading p { font-size: 14px; }
+  .form-title { align-items: flex-start; gap: 10px; }
+  .step-dot { flex-shrink: 0; }
+  .form-title h2 { font-size: 19px; }
+  .radio-group { flex-direction: column; }
+  .radio-group label { width: 100%; min-height: 46px; font-size: 14px; }
+  select { font-size: 16px; }
+  .checkbox-label { align-items: flex-start; padding: 10px 0; }
+  .checkbox-label input { margin-top: 4px; }
+  .scenario-panel { padding: 18px; }
+  .scenario-panel select { width: 100%; margin-top: 10px; font-size: 16px; }
+  .scenario-panel small { margin-top: 10px; }
+  .uncertainty-notice { padding: 18px; }
+  .recommendation { padding: 26px 0; }
+  .recommendation h3 { font-size: 17px; line-height: 1.4; }
+  .result-total { font-size: 34px; }
+  .chart-panel { padding-left: 8px; padding-right: 8px; }
+  .chart-legend { flex-wrap: wrap; gap: 10px 16px; }
+  .question-list label { padding: 15px 0; }
+}
+@media print {
+  .uncertainty-notice { break-inside: avoid; }
+}
